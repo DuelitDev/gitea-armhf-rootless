@@ -2,10 +2,8 @@ name: release-tag-version
 
 on:
   push:
-    tags:
-      - "v1.*"
-      - "!v1*-rc*"
-      - "!v1*-dev"
+    branches:
+      - release/v1.23
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
