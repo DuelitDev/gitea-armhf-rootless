@@ -11,7 +11,7 @@ concurrency:
 
 jobs:
   docker-rootless:
-    runs-on: namespace-profile-gitea-release-docker
+    runs-on: self-hosted
     steps:
       - uses: actions/checkout@v4
       # fetch all commits instead of only the last as some branches are long lived and could have many between versions
